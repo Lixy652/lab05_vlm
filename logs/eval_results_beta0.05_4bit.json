@@ -1,0 +1,422 @@
+{
+  "基线": {
+    "tag": "基线",
+    "by_type": {
+      "count": [
+        1,
+        5
+      ],
+      "attr": [
+        0,
+        5
+      ],
+      "exist": [
+        0,
+        5
+      ]
+    },
+    "total": 1,
+    "records": [
+      {
+        "id": "P01",
+        "type": "count",
+        "q": "图中有几个红色圆形？",
+        "gold": "2",
+        "pred": "1",
+        "ok": false
+      },
+      {
+        "id": "P02",
+        "type": "count",
+        "q": "图中有几个绿色圆形？",
+        "gold": "3",
+        "pred": "1",
+        "ok": false
+      },
+      {
+        "id": "P03",
+        "type": "count",
+        "q": "图中有几个黄色方形？",
+        "gold": "2",
+        "pred": "2",
+        "ok": true
+      },
+      {
+        "id": "P04",
+        "type": "count",
+        "q": "图中有几个黄色圆形？",
+        "gold": "4",
+        "pred": "2",
+        "ok": false
+      },
+      {
+        "id": "P05",
+        "type": "count",
+        "q": "图中有几个蓝色圆形？",
+        "gold": "3",
+        "pred": "2",
+        "ok": false
+      },
+      {
+        "id": "P06",
+        "type": "attr",
+        "q": "图中蓝色的图形是什么形状？",
+        "gold": "方形",
+        "pred": "0",
+        "ok": false
+      },
+      {
+        "id": "P07",
+        "type": "attr",
+        "q": "图中红色的图形是什么形状？",
+        "gold": "圆形",
+        "pred": "另外，图形是什么形状？",
+        "ok": false
+      },
+      {
+        "id": "P08",
+        "type": "attr",
+        "q": "图中绿色的图形是什么形状？",
+        "gold": "方形",
+        "pred": "<P>",
+        "ok": false
+      },
+      {
+        "id": "P09",
+        "type": "attr",
+        "q": "图中黄色的图形是什么形状？",
+        "gold": "圆形",
+        "pred": "Answer: circle",
+        "ok": false
+      },
+      {
+        "id": "P10",
+        "type": "attr",
+        "q": "图中蓝色的图形是什么形状？",
+        "gold": "方形",
+        "pred": "The image contains a square.",
+        "ok": false
+      },
+      {
+        "id": "P11",
+        "type": "exist",
+        "q": "图里有没有黄色方形？",
+        "gold": "有",
+        "pred": "No.",
+        "ok": false
+      },
+      {
+        "id": "P12",
+        "type": "exist",
+        "q": "图里有没有红色圆形？",
+        "gold": "没有",
+        "pred": "Answer: no",
+        "ok": false
+      },
+      {
+        "id": "P13",
+        "type": "exist",
+        "q": "图里有没有绿色圆形？",
+        "gold": "有",
+        "pred": "Answer: Neither",
+        "ok": false
+      },
+      {
+        "id": "P14",
+        "type": "exist",
+        "q": "图里有没有绿色方形？",
+        "gold": "没有",
+        "pred": "No.",
+        "ok": false
+      },
+      {
+        "id": "P15",
+        "type": "exist",
+        "q": "图里有没有蓝色图形？",
+        "gold": "没有",
+        "pred": "Answer: 0",
+        "ok": false
+      }
+    ]
+  },
+  "SFT": {
+    "tag": "SFT",
+    "by_type": {
+      "count": [
+        3,
+        5
+      ],
+      "attr": [
+        0,
+        5
+      ],
+      "exist": [
+        0,
+        5
+      ]
+    },
+    "total": 3,
+    "records": [
+      {
+        "id": "P01",
+        "type": "count",
+        "q": "图中有几个红色圆形？",
+        "gold": "2",
+        "pred": "2。",
+        "ok": true
+      },
+      {
+        "id": "P02",
+        "type": "count",
+        "q": "图中有几个绿色圆形？",
+        "gold": "3",
+        "pred": "2",
+        "ok": false
+      },
+      {
+        "id": "P03",
+        "type": "count",
+        "q": "图中有几个黄色方形？",
+        "gold": "2",
+        "pred": "2",
+        "ok": true
+      },
+      {
+        "id": "P04",
+        "type": "count",
+        "q": "图中有几个黄色圆形？",
+        "gold": "4",
+        "pred": "2",
+        "ok": false
+      },
+      {
+        "id": "P05",
+        "type": "count",
+        "q": "图中有几个蓝色圆形？",
+        "gold": "3",
+        "pred": "3",
+        "ok": true
+      },
+      {
+        "id": "P06",
+        "type": "attr",
+        "q": "图中蓝色的图形是什么形状？",
+        "gold": "方形",
+        "pred": "双方。",
+        "ok": false
+      },
+      {
+        "id": "P07",
+        "type": "attr",
+        "q": "图中红色的图形是什么形状？",
+        "gold": "圆形",
+        "pred": "双面。",
+        "ok": false
+      },
+      {
+        "id": "P08",
+        "type": "attr",
+        "q": "图中绿色的图形是什么形状？",
+        "gold": "方形",
+        "pred": "三面。",
+        "ok": false
+      },
+      {
+        "id": "P09",
+        "type": "attr",
+        "q": "图中黄色的图形是什么形状？",
+        "gold": "圆形",
+        "pred": "Circle",
+        "ok": false
+      },
+      {
+        "id": "P10",
+        "type": "attr",
+        "q": "图中蓝色的图形是什么形状？",
+        "gold": "方形",
+        "pred": "2.",
+        "ok": false
+      },
+      {
+        "id": "P11",
+        "type": "exist",
+        "q": "图里有没有黄色方形？",
+        "gold": "有",
+        "pred": "No.",
+        "ok": false
+      },
+      {
+        "id": "P12",
+        "type": "exist",
+        "q": "图里有没有红色圆形？",
+        "gold": "没有",
+        "pred": "No.",
+        "ok": false
+      },
+      {
+        "id": "P13",
+        "type": "exist",
+        "q": "图里有没有绿色圆形？",
+        "gold": "有",
+        "pred": "No.",
+        "ok": false
+      },
+      {
+        "id": "P14",
+        "type": "exist",
+        "q": "图里有没有绿色方形？",
+        "gold": "没有",
+        "pred": "No.",
+        "ok": false
+      },
+      {
+        "id": "P15",
+        "type": "exist",
+        "q": "图里有没有蓝色图形？",
+        "gold": "没有",
+        "pred": "No.",
+        "ok": false
+      }
+    ]
+  },
+  "SFT+DPO": {
+    "tag": "SFT+DPO",
+    "by_type": {
+      "count": [
+        3,
+        5
+      ],
+      "attr": [
+        0,
+        5
+      ],
+      "exist": [
+        0,
+        5
+      ]
+    },
+    "total": 3,
+    "records": [
+      {
+        "id": "P01",
+        "type": "count",
+        "q": "图中有几个红色圆形？",
+        "gold": "2",
+        "pred": "2。",
+        "ok": true
+      },
+      {
+        "id": "P02",
+        "type": "count",
+        "q": "图中有几个绿色圆形？",
+        "gold": "3",
+        "pred": "2",
+        "ok": false
+      },
+      {
+        "id": "P03",
+        "type": "count",
+        "q": "图中有几个黄色方形？",
+        "gold": "2",
+        "pred": "2",
+        "ok": true
+      },
+      {
+        "id": "P04",
+        "type": "count",
+        "q": "图中有几个黄色圆形？",
+        "gold": "4",
+        "pred": "2。",
+        "ok": false
+      },
+      {
+        "id": "P05",
+        "type": "count",
+        "q": "图中有几个蓝色圆形？",
+        "gold": "3",
+        "pred": "3",
+        "ok": true
+      },
+      {
+        "id": "P06",
+        "type": "attr",
+        "q": "图中蓝色的图形是什么形状？",
+        "gold": "方形",
+        "pred": "0。",
+        "ok": false
+      },
+      {
+        "id": "P07",
+        "type": "attr",
+        "q": "图中红色的图形是什么形状？",
+        "gold": "圆形",
+        "pred": "双面。",
+        "ok": false
+      },
+      {
+        "id": "P08",
+        "type": "attr",
+        "q": "图中绿色的图形是什么形状？",
+        "gold": "方形",
+        "pred": "三面。",
+        "ok": false
+      },
+      {
+        "id": "P09",
+        "type": "attr",
+        "q": "图中黄色的图形是什么形状？",
+        "gold": "圆形",
+        "pred": "O.",
+        "ok": false
+      },
+      {
+        "id": "P10",
+        "type": "attr",
+        "q": "图中蓝色的图形是什么形状？",
+        "gold": "方形",
+        "pred": "2.",
+        "ok": false
+      },
+      {
+        "id": "P11",
+        "type": "exist",
+        "q": "图里有没有黄色方形？",
+        "gold": "有",
+        "pred": "No.",
+        "ok": false
+      },
+      {
+        "id": "P12",
+        "type": "exist",
+        "q": "图里有没有红色圆形？",
+        "gold": "没有",
+        "pred": "No.",
+        "ok": false
+      },
+      {
+        "id": "P13",
+        "type": "exist",
+        "q": "图里有没有绿色圆形？",
+        "gold": "有",
+        "pred": "No.",
+        "ok": false
+      },
+      {
+        "id": "P14",
+        "type": "exist",
+        "q": "图里有没有绿色方形？",
+        "gold": "没有",
+        "pred": "No",
+        "ok": false
+      },
+      {
+        "id": "P15",
+        "type": "exist",
+        "q": "图里有没有蓝色图形？",
+        "gold": "没有",
+        "pred": "No",
+        "ok": false
+      }
+    ]
+  }
+}

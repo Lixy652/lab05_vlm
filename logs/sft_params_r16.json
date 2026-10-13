@@ -1,0 +1,13 @@
+{
+  "params": {
+    "total": 259212864,
+    "trainable": 2727936,
+    "ratio": 0.010523922146086084,
+    "ratio_pct": 1.0523922146086082
+  },
+  "r": 16,
+  "lora_alpha": 16,
+  "quantized": true,
+  "lr": 0.0001,
+  "steps": 60
+}

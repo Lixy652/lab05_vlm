@@ -1,0 +1,30 @@
+# ===== 实验产物 / 大文件（不要上传）=====
+# 依赖与运行时（5 GB+）
+.deps/
+.deps_tools/
+.matplotlib/
+__pycache__/
+*.pyc
+
+# 模型权重（494 MB，从 HuggingFace 下载）
+SmolVLM-256M-Instruct/
+.hf/
+
+# LoRA 适配器（每份 3~11 MB，可按需保留）
+sft_adapter*/
+dpo_adapter*/
+
+# 报告与 QA 中间产物（含学号/姓名，按需保留）
+output/
+tmp/
+
+# 控制台日志（含本地绝对路径）
+logs/*.log
+logs/install.log
+
+# 本机/编辑器
+.venv/
+.idea/
+.vscode/
+Thumbs.db
+desktop.ini

@@ -1,0 +1,14 @@
+{
+  "params": {
+    "total": 257848896,
+    "trainable": 1363968,
+    "ratio": 0.00528979577248219,
+    "ratio_pct": 0.529
+  },
+  "r": 8,
+  "lora_alpha": 16,
+  "quantized": true,
+  "lr": 0.0001,
+  "steps": 60,
+  "note": "total/trainable 取自训练时 print_trainable_parameters 输出（bnb Params4bit 需乘回 2*element_size）"
+}
